@@ -1,7 +1,7 @@
 /** String processing exercise 2. */
 public class UniqueChars {
     public static void main(String[] args) {  
-        String str = "back tohefur";
+        String str = "yuael played the yokelele";
         System.out.println(uniqueChars(str));
     }
 
@@ -14,7 +14,9 @@ public class UniqueChars {
         String string = "";
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (string.indexOf(c)==-1) {
+            if (c == ' ') {
+                string = string + c;
+            } else if (string.indexOf(c)==-1) {
              string = string + c;
             }
         }

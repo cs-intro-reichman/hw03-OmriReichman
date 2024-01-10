@@ -6,7 +6,7 @@ public class Calendar {
 	static int nDaysInMonth = 31;
 
     public static void main(String args[]) {
-    int yearChoose = 2021;
+    int yearChoose = Integer.parseInt(args[0]);
     int yearLater = yearChoose + 1;
      while (year < yearChoose) {
         advance();
